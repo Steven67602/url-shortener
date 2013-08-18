@@ -1,0 +1,23 @@
+<header>
+  <h1>Howdy!</h1>
+</header>
+<section class="short-url-list">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Original</th>
+        <th>Short Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @urls.each do |url| %>
+        <tr>
+          <td><%= url.id %></td>
+          <td><%= url.original %></td>
+          <td><%= url.short_code %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

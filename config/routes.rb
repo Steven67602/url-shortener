@@ -1,4 +1,5 @@
 UrlShortener::Application.routes.draw do
+  resources :shortened_url
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
